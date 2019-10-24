@@ -1,0 +1,53 @@
+#-----------------------------------------------------------
+# xsim v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Oct 24 14:07:18 2019
+# Process ID: 10042
+# Current directory: /mnt/castor/seas_home/h/haotianw/cis501/lab4-pipeline
+# Command line: xsim -mode tcl -source {xsim.dir/snapshot.sim/xsim_script.tcl}
+# Log file: /mnt/castor/seas_home/h/haotianw/cis501/lab4-pipeline/xsim.log
+# Journal file: /mnt/castor/seas_home/h/haotianw/cis501/lab4-pipeline/xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/snapshot.sim/xsim_script.tcl
+# xsim {snapshot.sim} -wdb {sim.wdb} -autoloadwcfg -runall -stats
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+run -all
+Info: /mnt/castor/seas_home/h/haotianw/cis501/lab4-pipeline/test_data/test_alu.hex
+Time: 0 ps  Iteration: 0  Process: /test_processor/memory/memory/Initial42_3  File: /mnt/castor/seas_home/h/haotianw/cis501/lab4-pipeline/include/bram.v
+Cycle number:           0
+Error at cycle           1: stall should be 2 (but was z)
+Error at cycle           2: stall should be 2 (but was z)
+Error at cycle           3: stall should be 2 (but was z)
+Error at cycle           4: stall should be 0 (but was z)
+Error at cycle           4: pc should be 8200 (but was zzzz)
+Error at cycle           4: insn should be 9010 (CONST R0 SEXT(000010000)) but was zzzz (???)
+Error at cycle           4: regfile_we should be 1 (but was z)
+Error at cycle           4: regfile_reg should be 0 (but was z)
+Error at cycle           4: regfile_in should be 0010 (but was zzzz)
+Error at cycle           4: nzp_we should be 1 (but was z)
+Error at cycle           4: nzp_new_bits should be 1 (but was z)
+Error at cycle           4: dmem_we should be 0 (but was z)
+Error at cycle           4: dmem_addr should be 0000 (but was zzzz)
+Error at cycle           4: dmem_data should be 0000 (but was zzzz)
+Error at cycle           5: stall should be 0 (but was z)
+Error at cycle           5: pc should be 8201 (but was zzzz)
+Error at cycle           5: insn should be d1b0 (HICONST R0 10110000) but was zzzz (???)
+Error at cycle           5: regfile_we should be 1 (but was z)
+Error at cycle           5: regfile_reg should be 0 (but was z)
+Error at cycle           5: regfile_in should be b010 (but was zzzz)
+Error at cycle           5: nzp_we should be 1 (but was z)
+Error at cycle           5: nzp_new_bits should be 4 (but was z)
+Error at cycle           5: dmem_we should be 0 (but was z)
+Error at cycle           5: dmem_addr should be 0000 (but was zzzz)
+Error at cycle           5: dmem_data should be 0000 (but was zzzz)
+Error at cycle           6: stall should be 0 (but was z)
+Error at cycle           6: your pipeline has stalled for more than 5 cycles in a row, which should never happen. This might indicate your pipeline will be stuck stalling forever.
+<scorePossible>        26</scorePossible>
+<scoreActual>         0</scoreActual>
+$finish called at time : 352 ns : File "/mnt/castor/seas_home/h/haotianw/cis501/lab4-pipeline/testbench_lc4_processor.v" Line 208
+exit
+INFO: Simulation Memory Usage: 118724 KB (Peak: 179900 KB)
+INFO: Simulation CPU Usage: 10 ms
+INFO: [Common 17-206] Exiting xsim at Thu Oct 24 14:07:26 2019...
